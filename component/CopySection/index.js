@@ -12,6 +12,7 @@ const CopySection = (props) => {
       <hr />
       <div className={styles.copyDescription}>
         <span>{roomId}</span>
+      
         <CopyToClipboard text={roomId}>
           <Copy className="ml-3 cursor-pointer" />
         </CopyToClipboard>
