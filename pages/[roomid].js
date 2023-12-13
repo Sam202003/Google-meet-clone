@@ -12,7 +12,7 @@ import CopySection from "@/component/CopySection";
 
 import styles from "@/styles/room.module.css";
 import { useRouter } from "next/router";
-
+//
 const Room = () => {
   const socket = useSocket();
   const { roomId } = useRouter().query;
