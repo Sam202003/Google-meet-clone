@@ -5,6 +5,7 @@ import { useState } from "react";
 export default function Home() {
   const router = useRouter();
   const [roomId, setRoomId] = useState("");
+  
   const createAndJoin = () => {
     const roomId = uuidv4();
     router.push(`/${roomId}`);
@@ -18,6 +19,7 @@ export default function Home() {
   };
 
   return (
+
     <div className={styles.homeContainer}>
       <h1>Google Meet Clone</h1>
       <div className={styles.enterRoom}>

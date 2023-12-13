@@ -18,7 +18,7 @@ const useMediaStream = () => {
       } catch (e) {
         console.log("Error in media navigator", e);
       }
-    });
+    })()
   }, [])
 
   return{
